@@ -419,6 +419,43 @@ em {
   transform: translateY(-3px);
 }
 
+/* =========================================================
+   RELATED DEVOTIONAL BUTTON
+   GRACE DOES NOT CANCEL RESPONSIBILITY
+   ========================================================= */
+
+.button-secondary,
+.hero-actions .button-secondary {
+  background: rgba(199,163,90,.08);
+  border: 1px solid var(--gold);
+  color: var(--gold-light);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.button-secondary:hover,
+.button-secondary:focus-visible,
+.hero-actions .button-secondary:hover,
+.hero-actions .button-secondary:focus-visible {
+  background: var(--gold);
+  border-color: var(--gold-light);
+  color: var(--black);
+  transform: translateY(-3px);
+  box-shadow: 0 14px 35px rgba(0,0,0,.3);
+}
+
+.button-secondary .button-arrow {
+  margin-left: .5rem;
+  font-size: 1rem;
+  transition: transform .25s ease;
+}
+
+.button-secondary:hover .button-arrow,
+.button-secondary:focus-visible .button-arrow {
+  transform: translateX(4px);
+}
+
+
 .button-arrow {
   margin-left: .5rem;
   font-size: 1rem;
