@@ -463,24 +463,17 @@ a {
 }
 
 
-//* =========================================================
+/* =========================================================
    HERO BANNER
    ========================================================= */
 
 .hero-image {
   position: absolute;
 
-  top: 50%;
-  left: 50%;
+  inset: 0;
 
-  width: min(
-    100%,
-    1500px
-  );
-
-  height: auto;
-
-  max-height: calc(100svh - 30px);
+  width: 100%;
+  height: 100%;
 
   display: block;
 
@@ -490,8 +483,7 @@ a {
 
   object-position: center center;
 
-  transform:
-    translate(-50%, -50%);
+  transform: scale(.96);
 
   pointer-events: none;
 }
@@ -2821,58 +2813,6 @@ cite {
 
     transform:
       none;
-  }
-
-}
-
-/* =========================================================
-   HERO FINAL RESPONSIVE REFINEMENT
-   ========================================================= */
-
-@media (max-width: 1200px) {
-
-  .hero-image {
-    width: min(
-      94%,
-      1350px
-    );
-  }
-
-}
-
-
-@media (max-width: 900px) {
-
-  .hero-image {
-    width: 100%;
-
-    max-height:
-      calc(100svh - 90px);
-  }
-
-}
-
-
-@media (max-width: 640px) {
-
-  .hero-image {
-    width: 100%;
-
-    max-height:
-      calc(100svh - 70px);
-  }
-
-  .hero-content {
-    padding-bottom: 3rem;
-  }
-
-}
-
-
-@media (max-width: 380px) {
-
-  .hero-content {
-    padding-bottom: 2.5rem;
   }
 
 }
