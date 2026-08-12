@@ -446,18 +446,11 @@ a {
   min-height: 100svh;
 
   display: flex;
-
   align-items: flex-end;
 
   overflow: hidden;
 
-  background:
-    linear-gradient(
-      180deg,
-      #05080c 0%,
-      #0a1017 50%,
-      #05080c 100%
-    );
+  background: #07090c;
 
   color: #ffffff;
 }
@@ -480,12 +473,11 @@ a {
   z-index: 0;
 
   object-fit: contain;
-
   object-position: center center;
 
-  transform: scale(.96);
-
   pointer-events: none;
+
+  transform: scale(.95);
 }
 
 
@@ -506,9 +498,9 @@ a {
     linear-gradient(
       0deg,
       rgba(4,7,11,.72) 0%,
-      rgba(4,7,11,.20) 35%,
-      rgba(4,7,11,.04) 70%,
-      rgba(4,7,11,.12) 100%
+      rgba(4,7,11,.22) 35%,
+      rgba(4,7,11,.05) 70%,
+      rgba(4,7,11,.15) 100%
     );
 }
 
@@ -531,9 +523,42 @@ a {
   margin-inline: auto;
 
   padding:
-    0 0 4.5rem;
+    0 0 4rem;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+   ========================================================= */
+
+.hero-actions {
+  position: relative;
+
+  z-index: 20;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: .85rem;
+
+  margin-top: 1.5rem;
 
   pointer-events: auto;
+}
+
+
+.hero-actions a,
+.hero-actions .button {
+  position: relative;
+
+  z-index: 21;
+
+  pointer-events: auto;
+
+  cursor: pointer;
 }
 
 /* =========================================================
